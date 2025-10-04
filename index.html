@@ -1,29 +1,159 @@
-<style>
-  /* 🌴 Fond plage + cocotiers */
-  body {
-    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: white;
-    position: relative;
-  }
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Îles Agency - TikTok Live</title>
+  <style>
+    /* 🌴 Fond plage + cocotiers */
+    body {
+      background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
 
-  /* 🕶️ Filtre sombre pour garder le texte lisible */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.45);
-    z-index: -1;
-  }
+    /* 🕶️ Filtre sombre pour lisibilité */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: -1;
+    }
 
-  main, header, section, footer {
-    position: relative;
-    z-index: 1;
-  }
-</style>
+    h1, h2, h3, p {
+      margin: 0.5em 0;
+    }
+
+    header {
+      padding: 100px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    .buttons {
+      margin: 20px 0;
+    }
+
+    .buttons button {
+      font-size: 1.1em;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px;
+      font-weight: 600;
+    }
+
+    .btn-red {
+      background-color: #ff4b4b;
+      color: white;
+    }
+
+    .btn-dark {
+      background-color: #222;
+      color: white;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    footer {
+      margin: 40px 0;
+      font-size: 0.9em;
+    }
+
+    form input, form textarea {
+      width: 45%;
+      padding: 10px;
+      margin: 5px;
+      border: none;
+      border-radius: 6px;
+    }
+
+    form button {
+      background-color: #ff4b4b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      form input, form textarea {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌴 Les Îles Agency 🌴</h1>
+    <p>Rejoignez Les Îles Agency — l'agence TikTok Live qui fait briller ta présence en ligne 🔥</p>
+    <div class="buttons">
+      <button class="btn-red">Postule maintenant</button>
+      <button class="btn-dark">Devenir créateur</button>
+    </div>
+  </header>
+
+  <section>
+    <h2>À propos</h2>
+    <p>Les Îles Agency est une agence dédiée à l'accompagnement des créateurs sur TikTok Live.</p>
+    <p><strong>+200 créateurs accompagnés</strong> — Présente sur <strong>5 îles</strong></p>
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <ul style="list-style:none; padding:0;">
+      <li>🌟 Accompagnement et formation pour réussir ses lives</li>
+      <li>🎥 Recrutement de créateurs</li>
+      <li>🛠️ Soutien technique</li>
+      <li>🤝 Gestion de partenariats et sponsoring</li>
+      <li>💳 Paiement sécurisé et suivi de performance</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Rejoindre l'agence</h2>
+    <form>
+      <input type="text" placeholder="Nom" required>
+      <input type="text" placeholder="Âge" required><br>
+      <textarea rows="4" placeholder="Parle-nous de toi..."></textarea><br>
+      <button type="submit">Envoyer ma candidature</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Les Îles Agency - Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
